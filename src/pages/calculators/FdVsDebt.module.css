@@ -1,0 +1,55 @@
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  box-shadow: 0 4px 16px var(--card-shadow);
+  border-radius: 0.75rem;
+}
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.formGroup {
+  margin-bottom: 1rem;
+}
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: var(--fg);
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--brand);
+}
+.calcBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  transition: background 0.2s;
+}
+.calcBtn:hover {
+  background: var(--accent);
+}
+.error {
+  color: #b91c1c;
+  margin-top: 1rem;
+}
+.results {
+  background: var(--accent-light);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-top: 1.5rem;
+}

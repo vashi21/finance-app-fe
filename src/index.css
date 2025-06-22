@@ -1,0 +1,46 @@
+/* 1) import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* 2) define CSS variables and dark‐mode swap */
+:root {
+  --brand: #075985;
+  --accent: #FBBF24;
+  --bg: #F9FAFB;
+  --fg: #111827;
+  --card-bg: #FFFFFF;
+  --card-shadow: rgba(0,0,0,0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;
+    --fg: #F9FAFB;
+    --card-bg: #1F2937;
+  }
+}
+
+/* 3) global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body, #root {
+  height: 100%;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  color: var(--brand);
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}

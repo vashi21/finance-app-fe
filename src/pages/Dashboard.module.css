@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.card {
+  background: var(--card-bg);
+  box-shadow: 0 4px 16px var(--card-shadow);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 6px 20px var(--card-shadow);
+}
+.icon {
+  color: var(--brand);
+  margin-bottom: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+}
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.desc {
+  flex-grow: 1;
+  color: var(--neutral-600);
+  margin-bottom: 1rem;
+}
+.openBtn {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: var(--fg);
+  border-radius: 0.375rem;
+  transition: background 0.2s;
+}
+.openBtn:hover {
+  background: var(--accent-dark);
+}
